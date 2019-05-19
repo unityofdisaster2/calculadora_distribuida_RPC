@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-//se llama variable externa yyin para uso de archivos como entrada
-extern FILE *yyin;
 int main(){
+    //no es necesario usar alguna variable para lectura de datos en consola
+    //ya que la funcion yyparse contenida en calculadora lo hace automaticamente    
     double res_pref = 0;
     //se calcula expresion infija y se guarda resultado en archivo de texto
     res_pref = calculadora_infija();

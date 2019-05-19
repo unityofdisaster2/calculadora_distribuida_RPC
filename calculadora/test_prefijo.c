@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-//se llama variable externa yyin para uso de archivos como entrada
-extern FILE *yyin;
+
 int main(){
     double res_pref = 0;
-    //se calcula expresion prefija y se guarda resultado en archivo de texto
+    //no es necesario usar alguna variable para lectura de datos en consola
+    //ya que la funcion yyparse contenida en calculadora lo hace automaticamente      
     res_pref = calculadora_prefija();
     FILE *resultado_final = fopen("resultado.txt","w");
     if(res_pref != -12345.0){
