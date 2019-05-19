@@ -25,7 +25,7 @@ calcular_1_svc(entrada *argp, struct svc_req *rqstp)
     double numero;
     int res_notacion;
     char notacion[2], resultado_final[100];
-    printf("se recibe peticion...\n");
+    printf("se recibe peticion... \n");
     //se guarda cadena recibida por cliente en un archivo
     entrada = fopen("dato_entrada.txt", "w");
     fprintf(entrada, "%s", argp->arg1);
